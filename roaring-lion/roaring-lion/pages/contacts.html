@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>גורמים מסייעים — מדריך שאגת הארי</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="../index.html" class="logo">
+        <div class="logo-icon">🛡️</div>
+        מדריך שאגת הארי
+      </a>
+      <nav class="nav">
+        <a href="../index.html">דף הבית</a>
+        <a href="injury.html">פגיעה גופנית</a>
+        <a href="property.html">נזק לרכוש</a>
+        <a href="work.html">עבודה</a>
+        <a href="prepare.html">היערכות</a>
+        <a href="contacts.html" class="active">גורמים מסייעים</a>
+        <a href="../index.html#wizard" class="nav-cta btn">מצא את הזכויות שלי ←</a>
+      </nav>
+      <button class="nav-mobile-toggle">☰</button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <span class="mobile-nav-close">✕</span>
+  <a href="../index.html">דף הבית</a>
+  <a href="injury.html">פגיעה גופנית</a>
+  <a href="property.html">נזק לרכוש</a>
+  <a href="work.html">עבודה</a>
+  <a href="prepare.html">היערכות</a>
+  <a href="contacts.html">גורמים מסייעים</a>
+</div>
+
+<div class="page-content">
+  <div class="container">
+    <div class="page-hero">
+      <div class="section-tag">גורמים מסייעים</div>
+      <h1>📞 כל מי שיכול לעזור לך</h1>
+      <p>מספרי טלפון, אתרים ואנשי קשר — ממשלתיים, רפואיים, משפטיים ונפשיים. הכל במקום אחד.</p>
+    </div>
+
+    <!-- EMERGENCY BLOCK -->
+    <div class="alert-banner" style="margin-bottom:32px">
+      <div class="alert-banner-icon">🚨</div>
+      <div class="alert-banner-text">
+        <strong>מספרי חירום מיידיים</strong>
+        <div class="emergency-numbers" style="margin-top:8px">
+          <a href="tel:101" class="emergency-num">🚑 מד"א: 101</a>
+          <a href="tel:100" class="emergency-num">👮 משטרה: 100</a>
+          <a href="tel:102" class="emergency-num">🚒 כיבוי: 102</a>
+          <a href="tel:112" class="emergency-num">☎️ חירום: 112</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" class="search-input" id="search-input" placeholder="חפש גוף מסייע, שם, מספר טלפון..." />
+    </div>
+
+    <!-- FILTER TABS -->
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="כל">הכל</button>
+      <button class="filter-tab" data-filter="חירום">🚨 חירום</button>
+      <button class="filter-tab" data-filter="ממשלתי">🏛️ ממשלתי</button>
+      <button class="filter-tab" data-filter="תמיכה">💙 תמיכה נפשית</button>
+      <button class="filter-tab" data-filter="משפטי">⚖️ משפטי</button>
+    </div>
+
+    <!-- CONTACTS GRID — loaded by JS -->
+    <div class="contacts-grid" id="contacts-grid">
+      <!-- Populated by JS from resources.json -->
+      <!-- Fallback static cards if JS fails -->
+      <div class="contact-card" data-searchable>
+        <div class="contact-card-header">
+          <div class="contact-card-icon">🏛️</div>
+          <div>
+            <div class="contact-card-name">המוסד לביטוח לאומי</div>
+            <span class="contact-category-badge cat-ממשלתי">ממשלתי</span>
+          </div>
+        </div>
+        <div class="contact-card-desc">תביעות נפגעי פעולות איבה, פגיעה בעבודה, נכות ודמי אבטלה.</div>
+        <div class="contact-card-actions">
+          <a href="tel:*6050" class="contact-btn contact-btn-call">📞 *6050</a>
+          <a href="https://www.btl.gov.il" target="_blank" class="contact-btn contact-btn-web">🌐 אתר</a>
+        </div>
+      </div>
+      <div class="contact-card" data-searchable>
+        <div class="contact-card-header">
+          <div class="contact-card-icon">🏠</div>
+          <div>
+            <div class="contact-card-name">קרן פיצויים מס רכוש</div>
+            <span class="contact-category-badge cat-ממשלתי">ממשלתי</span>
+          </div>
+        </div>
+        <div class="contact-card-desc">פיצויים על נזק לרכוש בשל פעולות מלחמה — בית, רכב, ציוד.</div>
+        <div class="contact-card-actions">
+          <a href="tel:1222" class="contact-btn contact-btn-call">📞 1222</a>
+          <a href="https://www.gov.il" target="_blank" class="contact-btn contact-btn-web">🌐 אתר</a>
+        </div>
+      </div>
+      <div class="contact-card" data-searchable>
+        <div class="contact-card-header">
+          <div class="contact-card-icon">💼</div>
+          <div>
+            <div class="contact-card-name">רשות המסים</div>
+            <span class="contact-category-badge cat-ממשלתי">ממשלתי</span>
+          </div>
+        </div>
+        <div class="contact-card-desc">פיצויים לעסקים, נזק לרכוש מסחרי.</div>
+        <div class="contact-card-actions">
+          <a href="tel:*4954" class="contact-btn contact-btn-call">📞 *4954</a>
+          <a href="https://www.taxes.gov.il" target="_blank" class="contact-btn contact-btn-web">🌐 אתר</a>
+        </div>
+      </div>
+      <div class="contact-card" data-searchable>
+        <div class="contact-card-header">
+          <div class="contact-card-icon">🚑</div>
+          <div>
+            <div class="contact-card-name">מגן דוד אדום</div>
+            <span class="contact-category-badge cat-חירום">חירום</span>
+          </div>
+        </div>
+        <div class="contact-card-desc">עזרה ראשונה וחירום רפואי 24/7.</div>
+        <div class="contact-card-actions">
+          <a href="tel:101" class="contact-btn contact-btn-call">📞 101</a>
+          <a href="https://www.mdais.org" target="_blank" class="contact-btn contact-btn-web">🌐 אתר</a>
+        </div>
+      </div>
+      <div class="contact-card" data-searchable>
+        <div class="contact-card-header">
+          <div class="contact-card-icon">🧠</div>
+          <div>
+            <div class="contact-card-name">נט"ל — לנפגעי טראומה</div>
+            <span class="contact-category-badge cat-תמיכה">תמיכה</span>
+          </div>
+        </div>
+        <div class="contact-card-desc">עזרה נפשית לנפגעי חרדה ופגיעות נפשיות. חינמי, אנונימי.</div>
+        <div class="contact-card-actions">
+          <a href="tel:1-800-363-363" class="contact-btn contact-btn-call">📞 1-800-363-363</a>
+          <a href="https://www.natal.org.il" target="_blank" class="contact-btn contact-btn-web">🌐 אתר</a>
+        </div>
+      </div>
+      <div class="contact-card" data-searchable>
+        <div class="contact-card-header">
+          <div class="contact-card-icon">💙</div>
+          <div>
+            <div class="contact-card-name">סה"ר — תמיכה נפשית</div>
+            <span class="contact-category-badge cat-תמיכה">תמיכה</span>
+          </div>
+        </div>
+        <div class="contact-card-desc">קו חירום לתמיכה נפשית 24/7. גם צ'אט ואימייל.</div>
+        <div class="contact-card-actions">
+          <a href="tel:1201" class="contact-btn contact-btn-call">📞 1201</a>
+          <a href="https://www.sahar.org.il" target="_blank" class="contact-btn contact-btn-web">🌐 אתר</a>
+        </div>
+      </div>
+      <div class="contact-card" data-searchable>
+        <div class="contact-card-header">
+          <div class="contact-card-icon">⚖️</div>
+          <div>
+            <div class="contact-card-name">סיוע משפטי — משרד המשפטים</div>
+            <span class="contact-category-badge cat-משפטי">משפטי</span>
+          </div>
+        </div>
+        <div class="contact-card-desc">ייעוץ משפטי חינמי לזכאים. תביעות, זכויות, ערעורים.</div>
+        <div class="contact-card-actions">
+          <a href="tel:*8916" class="contact-btn contact-btn-call">📞 *8916</a>
+          <a href="https://www.gov.il" target="_blank" class="contact-btn contact-btn-web">🌐 אתר</a>
+        </div>
+      </div>
+      <div class="contact-card" data-searchable>
+        <div class="contact-card-header">
+          <div class="contact-card-icon">👷</div>
+          <div>
+            <div class="contact-card-name">משרד העבודה</div>
+            <span class="contact-category-badge cat-ממשלתי">ממשלתי</span>
+          </div>
+        </div>
+        <div class="contact-card-desc">זכויות עובדים, אכיפת דיני עבודה, דמי אבטלה.</div>
+        <div class="contact-card-actions">
+          <a href="tel:*3456" class="contact-btn contact-btn-call">📞 *3456</a>
+          <a href="https://www.gov.il" target="_blank" class="contact-btn contact-btn-web">🌐 אתר</a>
+        </div>
+      </div>
+      <div class="contact-card" data-searchable>
+        <div class="contact-card-header">
+          <div class="contact-card-icon">👮</div>
+          <div>
+            <div class="contact-card-name">משטרת ישראל</div>
+            <span class="contact-category-badge cat-חירום">חירום</span>
+          </div>
+        </div>
+        <div class="contact-card-desc">תלונות, תיעוד נזקים רשמי, אבטחה ציבורית.</div>
+        <div class="contact-card-actions">
+          <a href="tel:100" class="contact-btn contact-btn-call">📞 100</a>
+          <a href="https://www.police.gov.il" target="_blank" class="contact-btn contact-btn-web">🌐 אתר</a>
+        </div>
+      </div>
+      <div class="contact-card" data-searchable>
+        <div class="contact-card-header">
+          <div class="contact-card-icon">🚨</div>
+          <div>
+            <div class="contact-card-name">מוקד חירום ארצי</div>
+            <span class="contact-category-badge cat-חירום">חירום</span>
+          </div>
+        </div>
+        <div class="contact-card-desc">כולל כיבוי אש, משטרה, רפואה — מוקד אחד לכולם.</div>
+        <div class="contact-card-actions">
+          <a href="tel:112" class="contact-btn contact-btn-call">📞 112</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="disclaimer" style="margin-top:40px">
+      <strong>⚠️ הצהרת אחריות</strong><br />
+      המידע באתר זה הוא הדרכה כללית בלבד. מספרי טלפון ונהלים עשויים להשתנות — אמת תמיד מול אתרי הגופים הרשמיים.
+      אתר זה אינו קשור לממשלת ישראל ואינו מייצגה.
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-icon">🛡️</div> מדריך שאגת הארי</div>
+        <p>מדריך אזרחי מקיף לנפגעי המלחמה. יוזמה פרטית.</p>
+      </div>
+      <div class="footer-links">
+        <a href="../index.html">דף הבית</a>
+        <a href="injury.html">פגיעה גופנית</a>
+        <a href="property.html">נזק לרכוש</a>
+        <a href="work.html">עבודה</a>
+        <a href="prepare.html">היערכות</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 אלעד — יוזמה אזרחית פרטית</span>
+      <span>לא אתר ממשלתי רשמי | המידע כללי בלבד</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

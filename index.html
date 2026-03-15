@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>מבצע שאגת הארי - מדריך הזכויות והפיצויים</title>
+  <meta name="description" content="מדריך מקיף לאזרחים שנפגעו במלחמה - פיצויים, זכויות, שלבי פעולה" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🛡️</div>
+        מדריך שאגת הארי
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="active">דף הבית</a>
+        <a href="pages/injury.html">פגיעה גופנית</a>
+        <a href="pages/property.html">נזק לרכוש</a>
+        <a href="pages/work.html">עבודה</a>
+        <a href="pages/prepare.html">היערכות</a>
+        <a href="pages/contacts.html">גורמים מסייעים</a>
+        <a href="index.html#wizard" class="nav-cta btn">מצא את הזכויות שלי ←</a>
+      </nav>
+      <button class="nav-mobile-toggle" aria-label="תפריט">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-nav" id="mobile-nav">
+  <span class="mobile-nav-close" role="button">✕</span>
+  <a href="index.html">דף הבית</a>
+  <a href="pages/injury.html">פגיעה גופנית</a>
+  <a href="pages/property.html">נזק לרכוש</a>
+  <a href="pages/work.html">עבודה</a>
+  <a href="pages/prepare.html">היערכות</a>
+  <a href="pages/contacts.html">גורמים מסייעים</a>
+</div>
+
+<div class="page-content">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-lines"></div>
+    <div class="container">
+      <div class="hero-content fade-in">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          מבצע שאגת הארי — ישראל-איראן
+        </div>
+        <h1>נפגעת במלחמה?<br /><span>דע את הזכויות שלך</span></h1>
+        <p class="hero-desc">
+          מדריך מקיף ומעשי לאזרחים ישראלים שנפגעו בגוף, ברכוש, בעסק או בעבודה.
+          מצא בדיוק מה לעשות, עם מי לדבר, ואיך לקבל את הפיצוי המגיע לך.
+        </p>
+        <div class="hero-actions">
+          <a href="#wizard" class="btn btn-primary" onclick="scrollToSection('wizard')">
+            🧭 מצא את הזכויות שלי
+          </a>
+          <a href="pages/contacts.html" class="btn btn-secondary">
+            📞 מספרי חירום
+          </a>
+        </div>
+
+        <!-- Quick actions -->
+        <div class="quick-actions">
+          <a href="pages/injury.html" class="quick-action-btn">
+            <div class="quick-action-icon">🤕</div>
+            <span class="quick-action-label">נפגעתי פיזית</span>
+          </a>
+          <a href="pages/property.html" class="quick-action-btn">
+            <div class="quick-action-icon">🏠</div>
+            <span class="quick-action-label">הבית שלי ניזוק</span>
+          </a>
+          <a href="pages/property.html#vehicle" class="quick-action-btn">
+            <div class="quick-action-icon">🚗</div>
+            <span class="quick-action-label">הרכב שלי ניזוק</span>
+          </a>
+          <a href="pages/work.html" class="quick-action-btn">
+            <div class="quick-action-icon">💼</div>
+            <span class="quick-action-label">יש לי בעיות בעבודה</span>
+          </a>
+          <a href="pages/work.html#business" class="quick-action-btn">
+            <div class="quick-action-icon">🏪</div>
+            <span class="quick-action-label">העסק שלי נפגע</span>
+          </a>
+          <a href="pages/injury.html#mental" class="quick-action-btn">
+            <div class="quick-action-icon">🧠</div>
+            <span class="quick-action-label">נזק נפשי / חרדה</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMERGENCY BANNER -->
+  <section class="section-sm" style="padding-top:0">
+    <div class="container">
+      <div class="alert-banner">
+        <div class="alert-banner-icon">🚨</div>
+        <div class="alert-banner-text">
+          <strong>חירום? פנה מיד לאחד מהמספרים הבאים</strong>
+          <div class="emergency-numbers">
+            <span class="emergency-num">🚑 מד"א: 101</span>
+            <span class="emergency-num">🚒 כיבוי: 102</span>
+            <span class="emergency-num">👮 משטרה: 100</span>
+            <span class="emergency-num">☎️ חירום: 112</span>
+            <span class="emergency-num">💙 נט"ל: 1-800-363-363</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section-sm" style="padding-top:0">
+    <div class="container">
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-num">3</span>
+          <span class="stat-label">חודשים להגשת תביעה לרכוש</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">12</span>
+          <span class="stat-label">חודשים לתביעה לביטוח לאומי</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">6+</span>
+          <span class="stat-label">סוגי פיצויים שונים</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">10</span>
+          <span class="stat-label">גורמים מסייעים במדריך</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WIZARD SECTION -->
+  <section class="section" id="wizard">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">אשף אינטראקטיבי</div>
+        <h2>מה לעשות — בדיוק במצב שלך</h2>
+        <p>ענה על כמה שאלות קצרות ותקבל הדרכה מותאמת אישית עם צעדים ברורים</p>
+      </div>
+      <div class="wizard-wrap">
+        <div class="wizard-header">
+          <div style="font-size:2rem">🧭</div>
+          <div>
+            <h3>אשף הזכויות</h3>
+            <p>מדריך אישי לפיצויים ושלבי הפעולה שלך</p>
+          </div>
+        </div>
+        <div class="wizard-body">
+          <div class="wizard-progress">
+            <div class="wizard-progress-bar" id="wizard-progress-bar" style="width:5%"></div>
+          </div>
+          <div id="wizard-content">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIES -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">מדריכים לפי נושא</div>
+        <h2>בחר את הנושא הרלוונטי אליך</h2>
+      </div>
+      <div class="card-grid">
+        <a href="pages/injury.html" class="card" style="text-decoration:none">
+          <div class="card-icon">🤕</div>
+          <h3>פגיעה גופנית</h3>
+          <p>רסיסים, גל הדף, ריצה למרחב מוגן, חרדה. זכויות ביטוח לאומי, פיצויים ותמיכה נפשית.</p>
+        </a>
+        <a href="pages/property.html" class="card" style="text-decoration:none">
+          <div class="card-icon">🏠</div>
+          <h3>נזק לרכוש</h3>
+          <p>בית, דירה, שמשות שבורות, שריפה. הגשת תביעה לקרן פיצויים מס רכוש.</p>
+        </a>
+        <a href="pages/property.html#vehicle" class="card" style="text-decoration:none">
+          <div class="card-icon">🚗</div>
+          <h3>נזק לרכב</h3>
+          <p>רסיסים, שריפה, פגיעה ישירה. כיסוי ביטוחי לצד פיצוי ממשלתי.</p>
+        </a>
+        <a href="pages/work.html" class="card" style="text-decoration:none">
+          <div class="card-icon">👷</div>
+          <h3>עבודה ועובדים</h3>
+          <p>היעדרות, חל"ת, פיטורים, שכר שלא שולם. זכויות עובדים בזמן חירום לאומי.</p>
+        </a>
+        <a href="pages/work.html#business" class="card" style="text-decoration:none">
+          <div class="card-icon">🏪</div>
+          <h3>בעלי עסקים</h3>
+          <p>נזק לעסק, הפסדי הכנסה, פיצויים ממשלתיים. מה צריך לתעד ולהגיש.</p>
+        </a>
+        <a href="pages/prepare.html" class="card" style="text-decoration:none">
+          <div class="card-icon">📋</div>
+          <h3>היערכות מוקדמת</h3>
+          <p>מה לעשות לפני שמשהו קורה. תיעוד רכוש, ביטוחים, ציוד חירום ומסמכים.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">ציר זמן</div>
+        <h2>מה לעשות ומתי — לאחר פגיעה</h2>
+      </div>
+      <div style="max-width: 640px;">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">מיד אחרי האירוע</div>
+            <div class="timeline-title">בטיחות ותיעוד ראשוני</div>
+            <div class="timeline-desc">ודא שאתה במקום בטוח. צלם כל נזק לפני שמישהו נוגע. התקשר לשירותי חירום אם נדרש.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">תוך 24-48 שעות</div>
+            <div class="timeline-title">הגשת תלונה ותיעוד רשמי</div>
+            <div class="timeline-desc">הגש תלונה במשטרה. צור קשר עם חברת הביטוח. שמור כל קבלה על הוצאה בגין הנזק.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">תוך שבוע</div>
+            <div class="timeline-title">פנייה לגורמים הרלוונטיים</div>
+            <div class="timeline-desc">הגשת תביעה לביטוח הלאומי / קרן פיצויים בהתאם לסוג הנזק. הזמן שמאי מוסמך.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">תוך חודש</div>
+            <div class="timeline-title">מעקב וייצוג</div>
+            <div class="timeline-desc">קבל ייעוץ משפטי אם התביעה מורכבת. אל תחתום על כלום בלי לקרוא ולהבין.</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-time">תוך 3 חודשים</div>
+            <div class="timeline-title">המועד האחרון לתביעת רכוש</div>
+            <div class="timeline-desc">הגשת תביעה לקרן פיצויים מס רכוש חייבת להתבצע לפני המועד. אל תשכח!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ PREVIEW -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">שאלות נפוצות</div>
+        <h2>תשובות לשאלות הכי נפוצות</h2>
+      </div>
+      <div class="faq-list" style="max-width: 720px;">
+        <div class="faq-item">
+          <div class="faq-question">
+            מה ההבדל בין ביטוח לאומי לקרן פיצויים מס רכוש?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            ביטוח לאומי מכסה פגיעות גוף - נפגעי פעולות איבה. קרן פיצויים של רשות המסים מכסה נזקי רכוש - בית, רכב, ציוד עסקי. ניתן להגיש לשניהם במקביל אם יש גם נזק גוף וגם נזק לרכוש.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            כמה זמן יש לי להגיש תביעה?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            לרוב יש 3 חודשים מיום הנזק להגיש תביעה לקרן פיצויים. לביטוח לאומי - 12 חודשים. מומלץ להגיש מוקדם ככל האפשר ולא לחכות.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            האם כל נזק מכוסה?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            לא. יש לוודא שהנזק נגרם ישירות מפעולת מלחמה (טיל, רסיסים, גל הדף). נזקים עקיפים כמו בהלה ותאונה הנגרמת בריצה למרחב מוגן יכולים להיכלל בתנאים מסוימים.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            מה אם שכרתי דירה שנפגעה?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            הבעלים של הנכס הוא שמגיש תביעה לנזקי מבנה. אתה כשוכר רשאי לתבוע על נזק לרכוש האישי שלך בתוך הדירה. ודא שיש לך ביטוח תכולה.
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">
+            איך מתעדים נזק נכון?
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-answer">
+            מצלמים לפני כל ניסיון תיקון. מציינים תאריך, שעה ומיקום. שומרים קבלות מכל הוצאה בגין הנזק. מגישים תלונה במשטרה. מזמינים שמאי מוסמך.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="disclaimer">
+        <strong>⚠️ הצהרת אחריות חשובה</strong><br />
+        אתר זה הוא יוזמה פרטית ומתנדבת שנוצרה על ידי אלעד. אין מדובר באתר ממשלתי רשמי.
+        המידע המוצג הוא הדרכה כללית בלבד ואינו מהווה ייעוץ משפטי, פיננסי או מקצועי מכל סוג.
+        מומלץ לוודא את המידע מול הגורמים הממשלתיים הרשמיים לפני כל פעולה.
+        <br /><br />
+        מקורות מידע: ביטוח לאומי, רשות המסים, משרד המשפטים, משרד העבודה.
+      </div>
+    </div>
+  </section>
+
+</div><!-- /page-content -->
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">🛡️</div>
+          מדריך שאגת הארי
+        </div>
+        <p>מדריך אזרחי מקיף לנפגעי המלחמה. יוזמה פרטית, מידע מעשי, ללא מטרות רווח.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">דף הבית</a>
+        <a href="pages/injury.html">פגיעה גופנית</a>
+        <a href="pages/property.html">נזק לרכוש</a>
+        <a href="pages/work.html">עבודה</a>
+        <a href="pages/prepare.html">היערכות</a>
+        <a href="pages/contacts.html">גורמים מסייעים</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 אלעד — יוזמה אזרחית פרטית</span>
+      <span>לא אתר ממשלתי רשמי | המידע כללי בלבד</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
